@@ -1,0 +1,169 @@
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+body{ 
+  
+  width: 100vw;
+  height: 100vh;
+   display: flex;
+  margin: 0;
+  background: #131313;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+ 
+  font-size: 96px;
+font-family: 'Fira Mono', monospace;
+  letter-spacing: 10px;
+}
+
+div{
+  align-items: top;
+  animation: glitch 1s linear infinite;
+  margin-left: 30px;
+  text-align: center;
+  
+}
+a {
+  width: 10%;
+}
+.button{
+  background-color: #c5c6d0;
+  border-radius: 20px;
+  font-size: 50px;
+}
+.button:hover {
+  opacity: 50%;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+div:before,
+div:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+div:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+div:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  div:hover {
+      opacity: 80%;
+  }
+  section {
+    padding-left: 90px;
+  }
+  @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px){
+  body{ 
+  
+    width: auto;
+    height: 800;
+   
+    
+    background: #131313;
+    color: #fff;
+   
+   
+    
+    font-size: 30px;
+  font-family: 'Fira Mono', monospace;
+    letter-spacing: 10px;
+  }
+  
+  div{
+   
+    animation: glitch 1s linear infinite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #background-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+  
+    div:hover {
+        opacity: 80%;
+    }
+    section {
+     padding-left: 0px;
+    }
+    .button {
+      font-size: 15px;
+    }
+}
+  
