@@ -67,16 +67,31 @@ body{
 .containerl {
     position: relative;
     width: 50%;
+    border-radius: 12px;
   }
   .containerr {
     position: relative;
     width: 50%;
+    border-radius: 12px;
   }
   .containerlarge {
     position: relative;
-    width: 100%; 
+    width: 100%;
+    border-radius: 12px; 
   }
    
+.containerl img {
+
+  border-radius: 12px;
+}
+.containerr img{
+
+  border-radius: 12px;
+}
+.containerlarge img {
+
+  border-radius: 12px; 
+}
   .image {
     display: block;
     width: 100%;
@@ -85,11 +100,12 @@ body{
   }
   .image-bio img {
      
-    width: 50%;
+    width: 60%;
     height: auto;
     box-shadow: 10px 10px;
     margin-left: 20px;
     margin-top: 10px;
+    border-radius: 12px;
     
   }
   
