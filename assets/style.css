@@ -137,6 +137,7 @@ and (max-device-width : 480px){
     text-align: center;
     align-content: center;
   }
+
   .content {
     display: flex;
     flex-wrap: wrap;

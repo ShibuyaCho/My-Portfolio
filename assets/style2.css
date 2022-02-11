@@ -7,15 +7,16 @@ body{
     flex-wrap: wrap;
 }
 .main-header {
- background-color: #c5c6d0;
+ background-color: black;
  opacity: 30%;
  width: 100%;
- height: 10%;
+ position: relative;
+ height: auto;
  
 }
 .main-header h1 {
-    color: #333333;
-    font-size: 5.1em;
+    color: #c5c6d0;
+    font-size: 5.1vh;
     font-family:  'Fira Mono', monospace;
     align-items: center;
     display: flex;
@@ -30,17 +31,19 @@ body{
     justify-content: center;
 }
 .container-bio{
+  position: relative;
     background-color: #ccc;
     opacity: 60%;
     display: flex;
-    height: 200px;
-    margin-bottom: 5px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
 }
 .bio h1 {
-    font-size: 25px;
+    font-size: 2vw;
     font-family: 'Fira Mono', monospace;
-    padding-left: 5px;
-    margin-left: 2px;
+    padding-left: 5%;
+    margin-left: 9%;
 }
 
 .header {
@@ -56,13 +59,22 @@ body{
     text-align: center;
 }
 .contact h2 {
+   text-decoration: none;
     color: #c5c6d0;
     background-color: #333333;
     text-shadow: 2px 2px;
     text-align: center;
+   
+    margin-bottom: 2%;
 }
 
-
+.master {
+  background-color: #c5c6d0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 12px;
+}
 
 .containerl {
     position: relative;
@@ -98,13 +110,15 @@ body{
     height: auto;
    
   }
+ 
   .image-bio img {
-     
-    width: 60%;
+     display: block;
+    width: 20vw;
     height: auto;
-    box-shadow: 10px 10px;
-    margin-left: 20px;
-    margin-top: 10px;
+    box-shadow: 1vw 1vh;
+    margin-left: 30%;
+    margin-top: 5%;
+    margin-bottom: 9%;
     border-radius: 12px;
     
   }
@@ -149,7 +163,7 @@ body{
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
     .main-header h1 {
-        color: #333333;
+        color: #c5c6d0;
         font-size: 20px;
         font-family:  'Fira Mono', monospace;
         align-items: center;
@@ -157,9 +171,10 @@ and (max-device-width : 480px) {
         justify-content: center;
     }
     .bio h1 {
-        font-size: 30%;
+        font-size: 2vw;
         font-family: 'Fira Mono', monospace;
         margin-right: 20px;
+       
        
     
     }
@@ -181,6 +196,9 @@ and (max-device-width : 480px) {
       
         
     }
+    .header h1 {
+      font-size: 10px; 
+  }
 }
 
 
